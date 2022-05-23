@@ -15,7 +15,8 @@
   ~ limitations under the License.
   -->
 
-<FrameLayout
+<androidx.slidingpanelayout.widget.SlidingPaneLayout
+    android:id="@+id/sliding_pane_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -30,4 +31,4 @@
         android:clipToPadding="false"
         android:padding="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-</FrameLayout>
+</androidx.slidingpanelayout.widget.SlidingPaneLayout>
