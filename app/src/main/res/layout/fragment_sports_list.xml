@@ -39,4 +39,5 @@
         android:layout_width="300dp"
         android:layout_weight="1"/>
 
+
 </androidx.slidingpanelayout.widget.SlidingPaneLayout>
