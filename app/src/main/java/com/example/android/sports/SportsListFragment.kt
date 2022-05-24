@@ -53,6 +53,14 @@ class SportsListFragment : Fragment() {
             sportsViewModel.updateCurrentSport(it)
 
             binding.slidingPaneLayout.openPane()
+
+            val slidingPaneLayout = binding.slidingPaneLayout
+
+            requireActivity().onBackPressedDispatcher.addCallback(
+                viewLifecycleOwner,
+                SportsListOnBackPressedCallback(slidingPaneLayout)
+            )
+
         }
         binding.recyclerView.adapter = adapter
         adapter.submitList(sportsViewModel.sportsData)
