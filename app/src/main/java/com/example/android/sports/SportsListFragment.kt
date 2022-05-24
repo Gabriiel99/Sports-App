@@ -61,6 +61,8 @@ class SportsListFragment : Fragment() {
                 SportsListOnBackPressedCallback(slidingPaneLayout)
             )
 
+            slidingPaneLayout.lockMode = SlidingPaneLayout.LOCK_MODE_LOCKED
+
         }
         binding.recyclerView.adapter = adapter
         adapter.submitList(sportsViewModel.sportsData)
